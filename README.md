@@ -1,6 +1,6 @@
 # LyricsKit
 
-Lyrics submodule for [LyricsX](https://github.com/ddddxxx/LyricsX).
+Lyrics submodule for [LyricsX](https://github.com/pannous/LyricsX).
 
 
 ## LRCX file

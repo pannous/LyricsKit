@@ -1,7 +1,7 @@
 //
 //  LyricsSourceIconDrawing+Image.swift
 //
-//  This file is part of LyricsX - https://github.com/ddddxxx/LyricsX
+//  This file is part of LyricsX - https://github.com/pannous/LyricsX
 //  Copyright (C) 2017  Xander Deng. Licensed under GPLv3.
 //
 
@@ -57,7 +57,7 @@
         
         public static let defaultSize = CGSize(width: 48, height: 48)
         
-        public static func icon(of source: LyricsProviderSource, size: CGSize = defaultSize) -> UIImage {
+        public static func icon(of source: LyricsProviders.Service, size: CGSize = defaultSize) -> UIImage {
             UIGraphicsBeginImageContextWithOptions(size, false, 0)
             source.drawingMethod?(CGRect(origin: .zero, size: size))
             let image = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)

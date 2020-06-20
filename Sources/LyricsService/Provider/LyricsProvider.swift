@@ -1,7 +1,7 @@
 //
 //  LyricsServices.swift
 //
-//  This file is part of LyricsX - https://github.com/ddddxxx/LyricsX
+//  This file is part of LyricsX - https://github.com/pannous/LyricsX
 //  Copyright (C) 2017  Xander Deng. Licensed under GPLv3.
 //
 
@@ -18,7 +18,6 @@ let sharedURLSession = URLSession(configuration: .ephemeral)
 public enum LyricsProviders {}
 
 protocol LyricsProvider {
-    
     func lyricsPublisher(request: LyricsSearchRequest) -> AnyPublisher<Lyrics, Never>
 }
 
