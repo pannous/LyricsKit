@@ -86,18 +86,18 @@ final class LyricsKitTests: XCTestCase {
 
     func getTranslations(lyrics:String) -> String {
 
-        let lyricsLineAttachmentPattern = "^(\\[[+-]?\\d+:\\d+(?:\\.\\d+)?\\])+\\[(.+?)\\](.*)"
-        let lyricsLineAttachmentRegex = try! Regex(lyricsLineAttachmentPattern, options: .anchorsMatchLines)
+        let lyricsPattern = "^(\\[[+-]?\\d+:\\d+(?:\\.\\d+)?\\])+\\[(.+?)\\](.*)"
+        let lyricsLineAttachmentRegex = try! Regex(lyricsPattern, options: .anchorsMatchLines)
         let l=lyricsLineAttachmentRegex as Regex
         if lyrics.contains("[tr]"){return lyrics}
-        let enhanced=""
-        let toTranslate=""
-//        for line in lyrics.split(separator: "\n") {
-//            if l.isMatch(line) { toTranslate.append(line.substring(from: 10)) }
-//        }
+        var toTranslate=""
+        for line in lyrics.split(separator: "\n") {
+            if line~=lyricsPattern { toTranslate.append(contentsOf: line)}//.substring(from: 10)) }
+        }
+        var enhanced=""
 //        for line in lyrics.split(separator: "\n") {
 //                    enhanced.append(line)
-//                    if l.isMatch(line) {
+//                    if line) {
 //                        line
 //                        enhanced.append(
 //                    }
@@ -174,10 +174,10 @@ final class LyricsKitTests: XCTestCase {
         _test(provider: LyricsProviders.ViewLyrics())
     }
     
-    
-    func _testKugou() {// Exceeded timeout of 10 seconds
-        _test(provider: LyricsProviders.Kugou())
-    }
+//  removed
+//    func _testKugou() {// Exceeded timeout of 10 seconds
+//        _test(provider: LyricsProviders.Kugou())
+//    }
     
     func _testSyair() {// Exceeded timeout of 10 seconds
         _test(provider: LyricsProviders.Syair())
