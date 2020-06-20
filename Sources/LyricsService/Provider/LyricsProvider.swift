@@ -17,8 +17,8 @@ let sharedURLSession = URLSession(configuration: .ephemeral)
 
 public enum LyricsProviders {}
 
-protocol LyricsProvider {
-    public func lyricsPublisher(request: LyricsSearchRequest) -> AnyPublisher<Lyrics, Never>
+public protocol LyricsProvider {
+    func lyricsPublisher(request: LyricsSearchRequest) -> AnyPublisher<Lyrics, Never>
 }
 
 protocol _LyricsProvider: LyricsProvider {

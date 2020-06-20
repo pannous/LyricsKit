@@ -92,7 +92,7 @@ final class LyricsKitTests: XCTestCase {
         if lyrics.contains("[tr]"){return lyrics}
         var toTranslate=""
         for line in lyrics.split(separator: "\n") {
-            if line~=lyricsPattern { toTranslate.append(contentsOf: line)}//.substring(from: 10)) }
+            if line ~= lyricsPattern { toTranslate.append(contentsOf: line)}//.substring(from: 10)) }
         }
         var enhanced=""
 //        for line in lyrics.split(separator: "\n") {
