@@ -82,17 +82,6 @@ let searchReq = LyricsSearchRequest(searchTerm: .info(title: testSong, artist: t
 
 final class LyricsKitTests: XCTestCase {
     
-    func _test(provider: LyricsProvider) {
-        var searchResultEx: XCTestExpectation? = expectation(description: "Search result: \(provider)")
-        let token = provider.lyricsPublisher(request: searchReq).sink { lrc in
-            print(lrc)
-            searchResultEx?.fulfill()
-            searchResultEx = nil
-        }
-        waitForExpectations(timeout: 10)
-        token.cancel()
-    }
-    
     var trialNumber=0
 
     func getTranslations(lyrics:String) -> String {
@@ -103,21 +92,21 @@ final class LyricsKitTests: XCTestCase {
         if lyrics.contains("[tr]"){return lyrics}
         let enhanced=""
         let toTranslate=""
-        for line in lyrics.split(separator: "\n") {
-            if l.isMatch(line) { toTranslate.append(line.substring(from: 10)) }
-        }
-        for line in lyrics.split(separator: "\n") {
-                    enhanced.append(line)
-                    if l.isMatch(line) {
-                        line
-                        enhanced.append(
-                    }
-        //            if line.contains("0]")
-                }
-        SwiftGoogleTranslate.shared.translate(text, "en", "", "text", "base", {translation ,error in
-
-        })
-        
+//        for line in lyrics.split(separator: "\n") {
+//            if l.isMatch(line) { toTranslate.append(line.substring(from: 10)) }
+//        }
+//        for line in lyrics.split(separator: "\n") {
+//                    enhanced.append(line)
+//                    if l.isMatch(line) {
+//                        line
+//                        enhanced.append(
+//                    }
+//        //            if line.contains("0]")
+//                }
+//        SwiftGoogleTranslate.shared.translate(text, "en", "", "text", "base", {translation ,error in
+//
+//        })
+        return "NO"
     }
     
     func testTranslate()  {
@@ -144,6 +133,19 @@ final class LyricsKitTests: XCTestCase {
         })
         waitForExpectations(timeout: 2)
     }
+    
+    
+    func _test(provider: LyricsProvider) {
+        var searchResultEx: XCTestExpectation? = expectation(description: "Search result: \(provider)")
+        let token = provider.lyricsPublisher(request: searchReq).sink { lrc in
+            print(lrc)
+            searchResultEx?.fulfill()
+            searchResultEx = nil
+        }
+        waitForExpectations(timeout: 10)
+        token.cancel()
+    }
+    
     
     func _testManager() {
         _test(provider: LyricsProviders.Group())

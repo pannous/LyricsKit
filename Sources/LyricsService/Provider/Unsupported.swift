@@ -17,7 +17,7 @@ extension LyricsProviders {
 
 extension LyricsProviders.Unsupported: LyricsProvider {
     
-    func lyricsPublisher(request: LyricsSearchRequest) -> AnyPublisher<Lyrics, Never> {
+    public func lyricsPublisher(request: LyricsSearchRequest) -> AnyPublisher<Lyrics, Never> {
         return Empty<Lyrics, Never>().eraseToAnyPublisher()
     }
 }
