@@ -8,9 +8,10 @@
 import Foundation
 
 public struct LyricsLine {
-    
+    public var id = UUID()
     public var content: String
     public var position: TimeInterval
+    public var translation: String?
     public var attachments: Attachments
     public var enabled: Bool = true
     
@@ -26,6 +27,7 @@ public struct LyricsLine {
         self.content = content
         self.position = position
         self.attachments = attachments
+        self.translation = attachments.translation()
     }
 }
 
