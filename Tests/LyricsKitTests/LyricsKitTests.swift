@@ -151,7 +151,7 @@ final class LyricsKitTests: XCTestCase {
     }
     
     
-    func _testManager() {
+    func testManager() {
         _test(provider: LyricsProviders.Group())
     }
     
@@ -164,6 +164,10 @@ final class LyricsKitTests: XCTestCase {
     
     func testGecimi() {// [04:28.390]We will be victorious
         _test(provider: LyricsProviders.Gecimi())
+    }
+    
+    func testXiami() {// [04:28.390]We will be victorious
+        _test(provider: LyricsProviders.Xiami())
     }
     
     func _testNetEase() {// best:

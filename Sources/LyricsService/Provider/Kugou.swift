@@ -25,7 +25,7 @@ extension LyricsProviders {
 
 extension LyricsProviders.Kugou: _LyricsProvider {
     
-    public static let service: LyricsProviders.Service = .kugou
+    public static let service: LyricsProviders.Service = .disabled // .kugou
     
     func lyricsSearchPublisher(request: LyricsSearchRequest) -> AnyPublisher<KugouResponseSearchResult.Item, Never> {
         let parameter: [String: Any] = [

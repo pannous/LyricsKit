@@ -12,11 +12,12 @@ extension LyricsProviders {
     public enum Service: String, CaseIterable {
         case netease = "163"
         case qq = "QQMusic"
-        case kugou = "Kugou"
         case xiami = "Xiami"
         case gecimi = "Gecimi"
-        case viewLyrics = "ViewLyrics"
-        case syair = "Syair"
+        case disabled = "disabled!"
+//        case viewLyrics = "ViewLyrics"
+        //        case kugou = "Kugou"
+//        case syair = "Syair"
     }
 }
 
@@ -26,10 +27,10 @@ extension LyricsProviders.Service {
         switch self {
         case .netease:  return LyricsProviders.NetEase()
         case .qq:       return LyricsProviders.QQMusic()
-        case .kugou:    return LyricsProviders.Kugou()
+//        case .kugou:    return LyricsProviders.Kugou()
         case .xiami:    return LyricsProviders.Xiami()
         case .gecimi:   return LyricsProviders.Gecimi()
-        case .viewLyrics: return LyricsProviders.ViewLyrics()
+//        case .viewLyrics: return LyricsProviders.ViewLyrics()
         default:        return LyricsProviders.Unsupported()
         }
     }

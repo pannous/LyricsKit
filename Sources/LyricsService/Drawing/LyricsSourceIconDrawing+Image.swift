@@ -18,8 +18,8 @@
                 return LyricsSourceIconDrawing.drawNetEaseMusic
             case .gecimi:
                 return LyricsSourceIconDrawing.drawGecimi
-            case .kugou:
-                return LyricsSourceIconDrawing.drawKugou
+//            case .kugou:
+//                return LyricsSourceIconDrawing.drawKugou
             case .qq:
                 return LyricsSourceIconDrawing.drawQQMusic
             case .xiami:
