@@ -30,9 +30,6 @@ extension LyricsProviders.Service {
         case .xiami:    return LyricsProviders.Xiami()
         case .gecimi:   return LyricsProviders.Gecimi()
         case .viewLyrics: return LyricsProviders.ViewLyrics()
-        #if canImport(Darwin)
-        case .syair:    return LyricsProviders.Syair()
-        #endif
         default:        return LyricsProviders.Unsupported()
         }
     }

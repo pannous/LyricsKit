@@ -75,9 +75,13 @@ let lyrics="""
 [03:13.740]Victorious victorious victorious
 [03:13.740][tr]胜利凯旋
 """
-let testSong = "Uprising"
-let testArtist = "Muse"
-let duration = 305.0
+//let testSong = "Uprising"
+//let testArtist = "Muse"
+//let duration = 305.0
+let testSong = "Tik Tok"
+let testArtist = "G.E.M."
+let duration = 229.338
+
 let searchReq = LyricsSearchRequest(searchTerm: .info(title: testSong, artist: testArtist), title: testSong, artist: testArtist, duration: duration)
 
 final class LyricsKitTests: XCTestCase {
@@ -131,7 +135,7 @@ final class LyricsKitTests: XCTestCase {
             }
             searchResultEx?.fulfill()
         })
-        waitForExpectations(timeout: 2)
+        waitForExpectations(timeout: 4)
     }
     
     
@@ -152,13 +156,13 @@ final class LyricsKitTests: XCTestCase {
     }
     
     
-    func _testQQMusic() {// [04:26.610]We will be victorious
+    func testQQMusic() {// [04:26.610]We will be victorious
 //[03:56.920]And we will be victorious HUH?
 //[03:56.920][tr]而我们会获胜
         _test(provider: LyricsProviders.QQMusic())
     }
     
-    func _testGecimi() {// [04:28.390]We will be victorious
+    func testGecimi() {// [04:28.390]We will be victorious
         _test(provider: LyricsProviders.Gecimi())
     }
     
@@ -179,9 +183,9 @@ final class LyricsKitTests: XCTestCase {
 //        _test(provider: LyricsProviders.Kugou())
 //    }
     
-    func _testSyair() {// Exceeded timeout of 10 seconds
-        _test(provider: LyricsProviders.Syair())
-    }
+//    func _testSyair() {// Exceeded timeout of 10 seconds
+//        _test(provider: LyricsProviders.Syair())
+//    }
     
     
     static var allTests = [

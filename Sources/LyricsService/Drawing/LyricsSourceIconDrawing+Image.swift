@@ -42,10 +42,14 @@
         public static let defaultSize = CGSize(width: 48, height: 48)
         
         public static func icon(of service: LyricsProviders.Service, size: CGSize = defaultSize) -> NSImage {
+            #if !targetEnvironment(macCatalyst)
             return NSImage(size: size, flipped: false) { (NSRect) -> Bool in
                 service.drawingMethod?(CGRect(origin: .zero, size: size))
                 return true
             }
+            #else
+            return NSImage(name: NSImage.addTemplateName)
+            #endif
         }
     }
     
