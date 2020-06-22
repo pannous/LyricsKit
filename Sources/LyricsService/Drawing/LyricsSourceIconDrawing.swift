@@ -23,7 +23,7 @@
 #if canImport(CoreGraphics)
 
 #if canImport(Cocoa)
-    
+#if !targetEnvironment(macCatalyst)
     import Cocoa
     
     typealias BezierPath = NSBezierPath
@@ -58,7 +58,7 @@
     typealias Color = UIColor
     
 #endif
-
+#endif
 public class LyricsSourceIconDrawing {
 
     //// Cache
