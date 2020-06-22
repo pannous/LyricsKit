@@ -59,6 +59,13 @@
     
 #endif
 #endif
+#if os(iOS) // iPad WHY? extra
+import UIKit
+typealias BezierPath = UIBezierPath
+typealias Color = UIColor
+#endif
+
+
 public class LyricsSourceIconDrawing {
 
     //// Cache
