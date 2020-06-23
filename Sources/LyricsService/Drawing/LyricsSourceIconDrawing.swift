@@ -59,10 +59,12 @@
     
 #endif
 #endif
+#if !targetEnvironment(macCatalyst)
 #if os(iOS) // iPad WHY? extra
 import UIKit
 typealias BezierPath = UIBezierPath
 typealias Color = UIColor
+#endif
 #endif
 
 
