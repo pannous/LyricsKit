@@ -10,7 +10,7 @@
 #if canImport(Darwin)
 
 import Foundation
-@_implementationOnly import SwiftCF
+// @_implementationOnly import SwiftCF
 
 extension Lyrics {
     
@@ -24,16 +24,16 @@ extension Lyrics {
 private extension LyricsLine {
     
     mutating func generateFurigana() {
-        var attachment = LyricsLine.Attachments.RangeAttribute(attributes: [])
-        let tokenizer = CFStringTokenizer.create(string: .from(content))
-        for tokenType in IteratorSequence(tokenizer) where tokenType.contains(.isCJWordMask) {
-            if let (furigana, range) = tokenizer.currentFuriganaAnnotation(in: content) {
-                let charRange = content.characterRange(range)
-                let attribute = LyricsLine.Attachments.RangeAttribute.Attribute(range: charRange, content: furigana)
-                attachment.attributes.append(attribute)
-            }
-        }
-        attachments.furigana = attachment
+        // var attachment = LyricsLine.Attachments.RangeAttribute(attributes: [])
+        // let tokenizer = CFStringTokenizer.create(string: .from(content))
+        // for tokenType in IteratorSequence(tokenizer) where tokenType.contains(.isCJWordMask) {
+        //     if let (furigana, range) = tokenizer.currentFuriganaAnnotation(in: content) {
+        //         let charRange = content.characterRange(range)
+        //         let attribute = LyricsLine.Attachments.RangeAttribute.Attribute(range: charRange, content: furigana)
+        //         attachment.attributes.append(attribute)
+        //     }
+        // }
+        // attachments.furigana = attachment
     }
 }
 
@@ -46,32 +46,31 @@ private extension String {
     }
     
     func transformLatinToHiragana() -> String? {
-        if #available(macOS 10.11, iOS 9.0, tvOS 9.0, watchOS 2.0, *) {
+        // if #available(macOS 10.11, iOS 9.0, tvOS 9.0, watchOS 2.0, *) {
             return applyingTransform(.latinToHiragana, reverse: false)
-        }
-        let str = CFString.from(self).mutableCopy()
-        var range = str.fullRange
-        guard CFStringTransform(str, &range, kCFStringTransformLatinHiragana, false) else { return nil }
-        return str as String
+        // }
+        // let str = CFString.from(self).mutableCopy()
+        // var range = str.fullRange
+        // guard CFStringTransform(str, &range, kCFStringTransformLatinHiragana, false) else { return nil }
+        // return str as String
     }
 }
 
 private extension CFStringTokenizer {
-    
-    func currentFuriganaAnnotation(in string: String) -> (String, Range<String.Index>)? {
-        guard let tokenRange = Range(currentTokenRange().asNS, in: string) else {
-            return nil
-        }
-        let tokenStr = string[tokenRange]
-        guard tokenStr.unicodeScalars.contains(where: CharacterSet.kanji.contains),
-              let latin: String = currentTokenAttribute(.latinTranscription)?.asSwift(),
-            let hiragana = latin.transformLatinToHiragana(),
-            let (rangeToAnnotate, rangeInAnnotation) = rangeOfUncommonContent(tokenStr, hiragana) else {
-                return nil
-        }
-        let annotation = String(hiragana[rangeInAnnotation])
-        return (annotation, rangeToAnnotate)
-    }
+    // func currentFuriganaAnnotation(in string: String) -> (String, Range<String.Index>)? {
+    //     guard let tokenRange = Range(currentTokenRange().asNS, in: string) else {
+    //         return nil
+    //     }
+    //     let tokenStr = string[tokenRange]
+    //     guard tokenStr.unicodeScalars.contains(where: CharacterSet.kanji.contains),
+    //           let latin: String = currentTokenAttribute(.latinTranscription)?.asSwift(),
+    //         let hiragana = latin.transformLatinToHiragana(),
+    //         let (rangeToAnnotate, rangeInAnnotation) = rangeOfUncommonContent(tokenStr, hiragana) else {
+    //             return nil
+    //     }
+    //     let annotation = String(hiragana[rangeInAnnotation])
+    //     return (annotation, rangeToAnnotate)
+    // }
 }
 
 private extension CharacterSet {
