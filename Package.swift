@@ -16,8 +16,8 @@ let package = Package(
             targets: ["LyricsCore", "LyricsService"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/cx-org/CombineX", .upToNextMinor(from: "0.2.1")),
-        .package(url: "https://github.com/cx-org/CXExtensions", .upToNextMinor(from: "0.2.1")),
+        .package(url: "https://github.com/cx-org/CombineX", .upToNextMinor(from: "0.4.0")),
+        .package(url: "https://github.com/cx-org/CXExtensions", .upToNextMinor(from: "0.4.0")),
         .package(url: "https://github.com/ddddxxx/Regex", .upToNextMinor(from: "0.2.0")),
 //        .package(url: "https://github.com/1024jp/GzipSwift", from: "5.0.0"), // Kugou removed
 //        .package(url: "https://github.com/maximbilan/SwiftGoogleTranslate", from: "0.2.2"), just 1 file
