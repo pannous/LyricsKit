@@ -9,9 +9,14 @@
 
 import Foundation
 
-public struct LyricsLine {
+public struct LyricsLine : Identifiable {
+	public var id: String {return content+"\(position)"}
+	
     
     public var content: String
+	public var translation: String?
+	public var enabled:Bool=true
+	public var isCurrent:Bool=false
     public var position: TimeInterval
     public var attachments: Attachments
     

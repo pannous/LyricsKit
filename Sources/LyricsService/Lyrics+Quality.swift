@@ -19,13 +19,13 @@ private let noTitleFactor = 0.8
 private let noDurationFactor = 0.8
 private let minimalDurationQuality = 0.5
 private let qualityMixBound = 1.05
-
+var searchRequest:LyricsSearchRequest? = .init(searchTerm: .info(title: "City", artist: "G.E.M."), duration: .minimum(0, 100))
 extension Lyrics {
     
     public var quality: Double {
-        if let quality = metadata.quality {
-            return quality
-        }
+//        if let quality = metadata.quality {
+//            return quality
+//        }
         var quality = 1 - pow((qualityMixBound - artistQuality) * (qualityMixBound - titleQuality) * (qualityMixBound - durationQuality), 0.3333)
         if metadata.hasTranslation {
             quality += translationBonus
@@ -42,7 +42,7 @@ extension Lyrics {
             let title = idTags[.title] else {
             return false
         }
-        switch metadata.searchRequest?.searchTerm {
+        switch searchRequest?.searchTerm {
         case let .info(searchTitle, searchArtist)?:
             return title.isCaseInsensitiveSimilar(to: searchTitle)
                 && artist.isCaseInsensitiveSimilar(to: searchArtist)
@@ -56,7 +56,7 @@ extension Lyrics {
     
     private var artistQuality: Double {
         guard let artist = idTags[.artist] else { return noArtistFactor }
-        switch metadata.searchRequest?.searchTerm {
+        switch searchRequest?.searchTerm {
         case let .info(_, searchArtist)?:
             if artist == searchArtist { return matchedArtistFactor }
             return similarity(s1: artist, s2: searchArtist)
@@ -70,7 +70,7 @@ extension Lyrics {
     
     private var titleQuality: Double {
         guard let title = idTags[.title] else { return noTitleFactor }
-        switch metadata.searchRequest?.searchTerm {
+        switch searchRequest?.searchTerm {
         case let .info(searchTitle, _)?:
             if title == searchTitle { return matchedTitleFactor }
             return similarity(s1: title, s2: searchTitle)
@@ -84,7 +84,7 @@ extension Lyrics {
     
     private var durationQuality: Double {
         guard let duration = length,
-            let searchDuration = metadata.searchRequest?.duration else {
+            let searchDuration = searchRequest?.duration else {
                 return noDurationFactor
         }
         let dt = abs(searchDuration - duration)

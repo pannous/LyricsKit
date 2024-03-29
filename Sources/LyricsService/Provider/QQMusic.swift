@@ -56,14 +56,18 @@ extension LyricsProviders.QQMusic: _LyricsProvider {
         let url = URL(string: qqLyricsBaseURLString + "?" + parameter.stringFromHttpParameters)!
         var req = URLRequest(url: url)
         req.setValue("y.qq.com/portal/player.html", forHTTPHeaderField: "Referer")
-        return sharedURLSession.cx.dataTaskPublisher(for: req)
+        return sharedURLSession.dataTaskPublisher(for: req)
             .compactMap {
+//				print("QQ response:")
+//				print("\($0.data)")
                 let data = $0.data.dropFirst(18).dropLast()
                 guard let model = try? JSONDecoder().decode(QQResponseSingleLyrics.self, from: data),
                     let lrcContent = model.lyricString,
                     let lrc = Lyrics(lrcContent) else {
-                        return nil
+//					print("no Lyrics!")
+                        return noLyrics
                 }
+			
                 if let transLrcContent = model.transString,
                     let transLrc = Lyrics(transLrcContent) {
                     lrc.merge(translation: transLrc)
@@ -76,14 +80,15 @@ extension LyricsProviders.QQMusic: _LyricsProvider {
                 lrc.length = Double(token.interval)
                 lrc.metadata.serviceToken = "\(token.songmid)"
                 if let id = Int(token.songmid) {
-                    lrc.metadata.artworkURL = URL(string: "http://imgcache.qq.com/music/photo/album/\(id % 100)/\(id).jpg")
+//                    lrc.metadata.artworkURL = URL(string: "http://imgcache.qq.com/music/photo/album/\(id % 100)/\(id).jpg")
                 }
                 
                 // remove their kana tag. we don't need it.
                 lrc.idTags.removeValue(forKey: .qqMusicKana)
-                
+//                print("GOT LYRICS!!")
                 return lrc
-            }.ignoreError()
+            }
+			.ignoreError()
             .eraseToAnyPublisher()
     }
 }

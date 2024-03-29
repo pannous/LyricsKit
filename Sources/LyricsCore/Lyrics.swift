@@ -9,12 +9,14 @@
 
 import Foundation
 
-final public class Lyrics {
+final public class Lyrics : Identifiable {
     
-    private var lines: [LyricsLine] = []
+    public var lines: [LyricsLine] = []
     public var idTags: [IDTagKey: String] = [:]
     public var metadata: Metadata = Metadata()
-    
+	public init(){
+		
+	}
     public init(lines: [LyricsLine], idTags: [IDTagKey: String], metadata: Metadata = Metadata()) {
         self.lines = lines
         self.idTags = idTags

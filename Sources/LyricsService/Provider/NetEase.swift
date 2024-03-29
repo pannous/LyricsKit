@@ -90,7 +90,7 @@ extension LyricsProviders.NetEase: _LyricsProvider {
                     transLrc.map(lrc.merge)
                     lyrics = lrc
                 } else {
-                    return nil
+                    return noLyrics
                 }
                 
                 // FIXME: merge inline time tags back to lyrics
@@ -102,7 +102,7 @@ extension LyricsProviders.NetEase: _LyricsProvider {
                 lyrics.idTags[.lrcBy]   = $0.lyricUser?.nickname
                 
                 lyrics.length = Double(token.value.duration) / 1000
-                lyrics.metadata.artworkURL = token.value.album.picUrl
+//                lyrics.metadata.artworkURL = token.value.album.picUrl
                 lyrics.metadata.serviceToken = "\(token.value.id)"
                 
                 return lyrics

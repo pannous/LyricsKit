@@ -78,7 +78,7 @@ extension LyricsProviders.ViewLyrics: _LyricsProvider {
             .compactMap {
                 guard let lrcContent = String(data: $0.data, encoding: .utf8),
                     let lrc = Lyrics(lrcContent) else {
-                        return nil
+                        return noLyrics
                 }
                 lrc.metadata.remoteURL = url
                 lrc.metadata.serviceToken = token.link
@@ -90,7 +90,7 @@ extension LyricsProviders.ViewLyrics: _LyricsProvider {
             .eraseToAnyPublisher()
     }
 }
-
+let noLyrics : Lyrics = .init(lines: [], idTags: [:])
 private enum NilError: Error {
     case error
 }
