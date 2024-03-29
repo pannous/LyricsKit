@@ -60,7 +60,7 @@ extension LyricsProviders.Gecimi: _LyricsProvider {
             .compactMap {
                 guard let lrcContent = String(data: $0.data, encoding: .utf8),
                     let lrc = Lyrics(lrcContent) else {
-                        return nil
+                        return noLyrics
                 }
                 lrc.metadata.remoteURL = token.lrc
                 lrc.metadata.serviceToken = "\(token.aid),\(token.lrc)"

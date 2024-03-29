@@ -14,7 +14,9 @@ extension Lyrics {
     public struct Metadata {
         
         private var data: [Key: Any]
-        
+		public var remoteURL:URL?
+		public var quality:Double?
+		public var serviceToken:String?
         public init(_ data: [Key: Any] = [:]) {
             self.data = data
         }

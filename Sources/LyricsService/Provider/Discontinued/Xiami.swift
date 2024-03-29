@@ -63,13 +63,13 @@ extension LyricsProviders.Xiami: _LyricsProvider {
             .compactMap {
                 guard let lrcStr = String(data: $0.data, encoding: .utf8),
                     let lrc = Lyrics(ttpodXtrcContent:lrcStr) else {
-                        return nil
+                        return noLyrics
                 }
                 lrc.idTags[.title] = token.value.song_name
                 lrc.idTags[.artist] = token.value.artist_name
                 
                 lrc.metadata.remoteURL = lrcURL
-                lrc.metadata.artworkURL = token.value.album_logo
+//                lrc.metadata.artworkURL = token.value.album_logo
                 lrc.metadata.serviceToken = token.value.lyric
                 return lrc
             }.ignoreError()

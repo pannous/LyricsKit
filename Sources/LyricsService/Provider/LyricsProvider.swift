@@ -36,8 +36,9 @@ extension _LyricsProvider {
             .prefix(request.limit)
             .flatMap(self.lyricsFetchPublisher)
             .map { lrc in
-                lrc.metadata.searchRequest = request
-                lrc.metadata.service = Self.service
+//                lrc.metadata.searchRequest = request
+				searchRequest = request
+//                lrc.metadata.service = Self.service
                 // TODO: lrc.metadata.searchIndex
                 return lrc
             }.eraseToAnyPublisher()
