@@ -9,9 +9,10 @@
 
 import Foundation
 import LyricsCore
-import CXShim
+import Combine
+//import CXShim
 import CXExtensions
-
+let noLyrics : Lyrics = .init(lines: [], idTags: [:])
 #if canImport(FoundationNetworking)
 import FoundationNetworking
 #endif
@@ -37,9 +38,9 @@ extension LyricsProviders.QQMusic: _LyricsProvider {
         let parameter = ["w": request.searchTerm.description]
         let url = URL(string: qqSearchBaseURLString + "?" + parameter.stringFromHttpParameters)!
         
-        return sharedURLSession.cx.dataTaskPublisher(for: url)
+        return sharedURLSession.dataTaskPublisher(for: url)
             .map { $0.data.dropFirst(9).dropLast() }
-            .decode(type: QQResponseSearchResult.self, decoder: JSONDecoder().cx)
+            .decode(type: QQResponseSearchResult.self, decoder: JSONDecoder())
             .map(\.data.song.list)
             .replaceError(with: [])
             .flatMap(Publishers.Sequence.init)
@@ -80,7 +81,9 @@ extension LyricsProviders.QQMusic: _LyricsProvider {
                 lrc.length = Double(token.interval)
                 lrc.metadata.serviceToken = "\(token.songmid)"
                 if let id = Int(token.songmid) {
-//                    lrc.metadata.artworkURL = URL(string: "http://imgcache.qq.com/music/photo/album/\(id % 100)/\(id).jpg")
+                    lrc.metadata.artworkURL = URL(string: "http://imgcache.qq.com/music/photo/album/\(id % 100)/\(id).jpg")
+					print("lrc.metadata.artworkURL")
+					print(lrc.metadata.artworkURL!)
                 }
                 
                 // remove their kana tag. we don't need it.
@@ -88,7 +91,12 @@ extension LyricsProviders.QQMusic: _LyricsProvider {
 //                print("GOT LYRICS!!")
                 return lrc
             }
-			.ignoreError()
+			.compactMap { $0 } // Remove nil values, if LyricsToken initialization fails
+			.replaceError(with: noLyrics)
+//			.catch { _ in
+//				Just(LyricsToken.placeholder) // Assuming a placeholder exists for error cases
+//			}
+//			.ignoreError()
             .eraseToAnyPublisher()
     }
 }
