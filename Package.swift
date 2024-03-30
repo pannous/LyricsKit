@@ -29,7 +29,7 @@ let package = Package(
             // dependencies: ["Regex", "SwiftCF"]),
         .target(
             name: "LyricsService",
-            dependencies: ["LyricsCore", "CXShim", "CXExtensions", "Regex", "Gzip"]),
+            dependencies: ["LyricsCore", "CXExtensions", "Regex", "Gzip"]),
         .testTarget(
             name: "LyricsKitTests",
             dependencies: ["LyricsCore", "LyricsService"],

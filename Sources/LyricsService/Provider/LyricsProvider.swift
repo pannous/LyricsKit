@@ -9,7 +9,8 @@
 
 import Foundation
 import LyricsCore
-import CXShim
+import Combine
+//import CXShim
 
 public enum LyricsProviders {}
 

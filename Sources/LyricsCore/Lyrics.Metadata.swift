@@ -17,6 +17,7 @@ extension Lyrics {
 		public var remoteURL:URL?
 		public var quality:Double?
 		public var serviceToken:String?
+		public var artworkURL:URL?
         public init(_ data: [Key: Any] = [:]) {
             self.data = data
         }
