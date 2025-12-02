@@ -18,6 +18,7 @@ extension LyricsProviders {
         case gecimi = "Gecimi"
         case syair = "Syair"
         case kkbox = "KKBOX"
+        case lrclib = "LRCLib"
     }
 }
 
@@ -28,6 +29,7 @@ extension LyricsProviders.Service {
 //        case .netease:  return LyricsProviders.NetEase()
         case .qq:       return LyricsProviders.QQMusic()
         case .kkbox:    return LyricsProviders.KKBOX()
+        case .lrclib:   return LyricsProviders.LRCLib()
 //        case .kugou:    return LyricsProviders.Kugou()
 //        case .gecimi:   return LyricsProviders.Gecimi()
 //        #if canImport(Darwin)
