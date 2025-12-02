@@ -59,13 +59,29 @@ extension LyricsProviders.LRCLib: _LyricsProvider {
         var req = URLRequest(url: url)
         req.setValue("Lyrics-Translator/1.0", forHTTPHeaderField: "User-Agent")
 
+        print("🔍 LRCLib search URL: \(url.absoluteString)")
+
         return sharedURLSession.dataTaskPublisher(for: req)
-            .map { $0.data }
+            .map { data, response in
+                if let httpResponse = response as? HTTPURLResponse {
+                    print("📡 LRCLib search response: \(httpResponse.statusCode)")
+                }
+                if let json = try? JSONSerialization.jsonObject(with: data),
+                   let jsonData = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted),
+                   let jsonString = String(data: jsonData, encoding: .utf8) {
+                    print("📦 LRCLib search data: \(jsonString.prefix(500))")
+                }
+                return data
+            }
             .decode(type: [LRCLibSearchResult].self, decoder: JSONDecoder())
-            .replaceError(with: [])
+            .catch { error -> Just<[LRCLibSearchResult]> in
+                print("❌ LRCLib decode error: \(error)")
+                return Just([])
+            }
             .flatMap(Publishers.Sequence.init)
             .map { result in
-                LyricsToken(
+                print("✅ LRCLib found: \(result.artistName) - \(result.trackName)")
+                return LyricsToken(
                     id: result.id,
                     trackName: result.trackName,
                     artistName: result.artistName,
