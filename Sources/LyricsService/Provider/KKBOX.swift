@@ -139,6 +139,24 @@ extension LyricsProviders.KKBOX: _LyricsProvider {
             lyricsHTML = lyricsHTML.replacingOccurrences(of: "&amp;", with: "&")
             lyricsHTML = lyricsHTML.trimmingCharacters(in: .whitespacesAndNewlines)
 
+            // Filter out "no lyrics available" messages in various languages
+            let noLyricsMessages = [
+                "這首歌曲暫無歌詞",  // Chinese Traditional: This song has no lyrics
+                "这首歌曲暂无歌词",  // Chinese Simplified
+                "此歌曲暫無歌詞",    // Alternative Traditional
+                "No lyrics available",
+                "Lyrics not available",
+                "純音樂，無歌詞",    // Pure music, no lyrics
+                "纯音乐，无歌词"     // Simplified version
+            ]
+
+            for message in noLyricsMessages {
+                if lyricsHTML.contains(message) {
+                    print("⚠️ KKBOX: No lyrics available - \(message)")
+                    return nil
+                }
+            }
+
             let lyrics = Lyrics(lines: [], idTags: [:])
             lyrics.idTags[.title] = token.title
             lyrics.idTags[.artist] = token.artist
