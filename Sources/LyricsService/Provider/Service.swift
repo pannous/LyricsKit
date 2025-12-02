@@ -10,28 +10,31 @@
 import Foundation
 
 extension LyricsProviders {
-    
+
     public enum Service: String, CaseIterable {
         case netease = "163"
         case qq = "QQMusic"
         case kugou = "Kugou"
         case gecimi = "Gecimi"
         case syair = "Syair"
+        case kkbox = "KKBOX"
     }
 }
 
 extension LyricsProviders.Service {
-    
+
     func create() -> LyricsProvider {
         switch self {
-        case .netease:  return LyricsProviders.NetEase()
+//        case .netease:  return LyricsProviders.NetEase()
         case .qq:       return LyricsProviders.QQMusic()
-        case .kugou:    return LyricsProviders.Kugou()
-        case .gecimi:   return LyricsProviders.Gecimi()
-        #if canImport(Darwin)
-        case .syair:    return LyricsProviders.Syair()
-        #endif
-        default:        return LyricsProviders.Unsupported()
+        case .kkbox:    return LyricsProviders.KKBOX()
+//        case .kugou:    return LyricsProviders.Kugou()
+//        case .gecimi:   return LyricsProviders.Gecimi()
+//        #if canImport(Darwin)
+//        case .syair:    return LyricsProviders.Syair()
+//        #endif
+        default:        return LyricsProviders.QQMusic()
+				//LyricsProviders.Unsupported()
         }
     }
 }
