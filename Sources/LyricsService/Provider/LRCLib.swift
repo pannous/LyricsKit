@@ -36,16 +36,14 @@ extension LyricsProviders.LRCLib: _LyricsProvider {
     public static let service: LyricsProviders.Service? = .lrclib
 
     public func lyricsSearchPublisher(request: LyricsSearchRequest) -> AnyPublisher<LyricsToken, Never> {
-        let searchTerm = request.searchTerm.description
-        let components = searchTerm.components(separatedBy: " - ")
-
         var queryParams: [String: String] = [:]
 
-        if components.count >= 2 {
-            queryParams["artist_name"] = components[0].trimmingCharacters(in: .whitespaces)
-            queryParams["track_name"] = components[1].trimmingCharacters(in: .whitespaces)
-        } else {
-            queryParams["q"] = searchTerm
+        switch request.searchTerm {
+        case let .info(title, artist) where !artist.isEmpty:
+            queryParams["track_name"] = title
+            queryParams["artist_name"] = artist
+        default:
+            queryParams["q"] = request.searchTerm.description
         }
 
         let queryString = queryParams.map { key, value in
