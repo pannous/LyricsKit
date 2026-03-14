@@ -26,17 +26,15 @@ extension LyricsProviders.Service {
 
     func create() -> LyricsProvider {
         switch self {
-//        case .netease:  return LyricsProviders.NetEase()
-        case .qq:       return LyricsProviders.QQMusic()
+        case .netease:  return LyricsProviders.NetEase()
         case .kkbox:    return LyricsProviders.KKBOX()
         case .lrclib:   return LyricsProviders.LRCLib()
-//        case .kugou:    return LyricsProviders.Kugou()
-//        case .gecimi:   return LyricsProviders.Gecimi()
-//        #if canImport(Darwin)
-//        case .syair:    return LyricsProviders.Syair()
-//        #endif
-        default:        return LyricsProviders.QQMusic()
-				//LyricsProviders.Unsupported()
+        // DEAD providers (2026-03-14):
+        // case .qq:    — QQ Music API returns 500
+        // case .kugou: — Kugou lyrics API returns empty results
+        // case .gecimi:— gecimi.com is down (timeout)
+        // case .syair: — discontinued
+        default:        return LyricsProviders.LRCLib()
         }
     }
 }
