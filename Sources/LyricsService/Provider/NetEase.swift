@@ -35,8 +35,15 @@ extension LyricsProviders.NetEase: _LyricsProvider {
     public static let service: LyricsProviders.Service? = .netease
 
     public func lyricsSearchPublisher(request: LyricsSearchRequest) -> AnyPublisher<LyricsToken, Never> {
+        // Use "artist title" order for better CJK search results
+        let searchString: String
+        if case let .info(title, artist) = request.searchTerm, !artist.isEmpty {
+            searchString = artist + " " + title
+        } else {
+            searchString = request.searchTerm.description
+        }
         let parameter: [String: Any] = [
-            "s": request.searchTerm.description,
+            "s": searchString,
             "offset": 0,
             "limit": 10,
             "type": 1,
@@ -78,7 +85,10 @@ extension LyricsProviders.NetEase: _LyricsProvider {
             "tv": -1,
         ]
         let url = URL(string: netEaseLyricsBaseURLString + parameter.stringFromHttpParameters)!
-        return sharedURLSession.dataTaskPublisher(for: url)
+        var req = URLRequest(url: url)
+        req.setValue("https://music.163.com/", forHTTPHeaderField: "Referer")
+        req.setValue("Mozilla/5.0", forHTTPHeaderField: "User-Agent")
+        return sharedURLSession.dataTaskPublisher(for: req)
             .map(\.data)
             .decode(type: NetEaseResponseSingleLyrics.self, decoder: JSONDecoder())
             .compactMap {
