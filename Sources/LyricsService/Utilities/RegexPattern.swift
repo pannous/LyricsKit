@@ -10,7 +10,7 @@
 import Foundation
 @_implementationOnly import Regex
 
-private let timeTagRegex = Regex(#"\[([-+]?\d+):(\d+(?:\.\d+)?)\]"#)
+private let timeTagRegex = try! Regex(#"\[([-+]?\d+):(\d+(?:\.\d+)?)\]"#)
 func resolveTimeTag(_ str: String) -> [TimeInterval] {
     let matchs = timeTagRegex.matches(in: str)
     return matchs.map { match in
@@ -20,20 +20,20 @@ func resolveTimeTag(_ str: String) -> [TimeInterval] {
     }
 }
 
-let id3TagRegex = Regex(#"^(?!\[[+-]?\d+:\d+(?:\.\d+)?\])\[(.+?):(.+)\]$"#, options: .anchorsMatchLines)
+let id3TagRegex = try! Regex(#"^(?!\[[+-]?\d+:\d+(?:\.\d+)?\])\[(.+?):(.+)\]$"#, options: .anchorsMatchLines)
 
-let krcLineRegex = Regex(#"^\[(\d+),(\d+)\](.*)"#, options: .anchorsMatchLines)
+let krcLineRegex = try! Regex(#"^\[(\d+),(\d+)\](.*)"#, options: .anchorsMatchLines)
 
-let netEaseInlineTagRegex = Regex(#"\(0,(\d+)\)([^(]+)(\(0,1\) )?"#)
+let netEaseInlineTagRegex = try! Regex(#"\(0,(\d+)\)([^(]+)(\(0,1\) )?"#)
 
-let kugouInlineTagRegex = Regex(#"<(\d+),(\d+),0>([^<]*)"#)
+let kugouInlineTagRegex = try! Regex(#"<(\d+),(\d+),0>([^<]*)"#)
 
-let ttpodXtrcLineRegex = Regex(
+let ttpodXtrcLineRegex = try! Regex(
     #"^((?:\[[+-]?\d+:\d+(?:\.\d+)?\])+)(?:((?:<\d+>[^<\r\n]+)+)|(.*))$(?:[\r\n]+\[x\-trans\](.*))?"#,
     options: .anchorsMatchLines)
 
-let ttpodXtrcInlineTagRegex = Regex(#"<(\d+)>([^<\r\n]*)"#)
+let ttpodXtrcInlineTagRegex = try! Regex(#"<(\d+)>([^<\r\n]*)"#)
 
-let syairSearchResultRegex = Regex(#"<div class="title"><a href="([^"]+)">"#)
+let syairSearchResultRegex = try! Regex(#"<div class="title"><a href="([^"]+)">"#)
 
-let syairLyricsContentRegex = Regex(#"<div class="entry">(.+?)<div"#, options: .dotMatchesLineSeparators)
+let syairLyricsContentRegex = try! Regex(#"<div class="entry">(.+?)<div"#, options: .dotMatchesLineSeparators)
