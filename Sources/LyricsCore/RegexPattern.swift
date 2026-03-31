@@ -8,9 +8,9 @@
 //
 
 import Foundation
-@_implementationOnly import Regex
+import Regex
 
-private let timeTagRegex = try! Regex(#"\[([-+]?\d+):(\d+(?:\.\d+)?)\]"#)
+private let timeTagRegex = Regex(#"\[([-+]?\d+):(\d+(?:\.\d+)?)\]"#)
 func resolveTimeTag(_ str: String) -> [TimeInterval] {
     let matchs = timeTagRegex.matches(in: str)
     return matchs.map { match in
@@ -24,12 +24,12 @@ let id3TagRegex = try! Regex(#"^(?!\[[+-]?\d+:\d+(?:\.\d+)?\])\[(.+?):(.+)\]$"#,
 
 let lyricsLineRegex = try! Regex(#"^((?:\[[+-]?\d+:\d+(?:\.\d+)?\])+)(?!\[)([^【\n\r]*)(?:【(.*)】)?"#, options: .anchorsMatchLines)
 
-let base60TimeRegex = try! Regex(#"^\s*(?:(\d+):)?(\d+(?:.\d+)?)\s*$"#)
+let base60TimeRegex = Regex(#"^\s*(?:(\d+):)?(\d+(?:.\d+)?)\s*$"#)
 
 let lyricsLineAttachmentRegex = try! Regex(#"^(\[[+-]?\d+:\d+(?:\.\d+)?\])+\[(.+?)\](.*)"#, options: .anchorsMatchLines)
 
-let timeLineAttachmentRegex = try! Regex(#"<(\d+,\d+)>"#)
+let timeLineAttachmentRegex = Regex(#"<(\d+,\d+)>"#)
 
-let timeLineAttachmentDurationRegex = try! Regex(#"<(\d+)>"#)
+let timeLineAttachmentDurationRegex = Regex(#"<(\d+)>"#)
 
-let rangeAttachmentRegex = try! Regex(#"<([^,]+,\d+,\d+)>"#)
+let rangeAttachmentRegex = Regex(#"<([^,]+,\d+,\d+)>"#)
