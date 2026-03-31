@@ -77,7 +77,7 @@ extension LyricsProviders.KKBOX: _LyricsProvider {
                 if match.numberOfRanges > 1 {
                     let songID = nsString.substring(with: match.range(at: 1))
                     var title = "Unknown"
-                    var artist = "Unknown"
+                    let artist = "Unknown"
 
                     if index < titleMatches.count && titleMatches[index].numberOfRanges > 1 {
                         title = nsString.substring(with: titleMatches[index].range(at: 1))
