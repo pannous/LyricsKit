@@ -1,0 +1,8 @@
+.build/
+.build.x/
+*.xcodeproj/
+.swiftpm/
+Package.resolved
+DerivedData/
+*.o
+*.d
