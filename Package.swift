@@ -16,7 +16,7 @@ let package = Package(
             targets: ["LyricsCore", "LyricsService"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/cx-org/CXShim", .upToNextMinor(from: "0.4.0")),
+//        .package(url: "https://github.com/cx-org/CXShim", .upToNextMinor(from: "0.4.0")),
         .package(url: "https://github.com/cx-org/CXExtensions", .upToNextMinor(from: "0.4.0")),
         .package(url: "https://github.com/ddddxxx/Regex", from: "1.0.1"),
         // .package(url: "https://github.com/ddddxxx/SwiftCF", .upToNextMinor(from: "0.2.0")),
@@ -29,7 +29,8 @@ let package = Package(
             // dependencies: ["Regex", "SwiftCF"]),
         .target(
             name: "LyricsService",
-            dependencies: ["LyricsCore", "CXExtensions", "Regex", "Gzip"]),
+//			dependencies: ["LyricsCore" ]),
+			dependencies: ["LyricsCore", "CXExtensions", "Regex", "Gzip"]),
         .testTarget(
             name: "LyricsKitTests",
             dependencies: ["LyricsCore", "LyricsService"],

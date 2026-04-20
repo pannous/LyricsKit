@@ -1,0 +1,12 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "a26ef75742e3eaf03d43106dac51e889fd3ad985fd7215462f2217553145ddca"
+build_start_time: [1681726139, 724700000]
+build_end_time: [1681726142, 488426000]
+inputs:
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXShim/Sources/CXCompatible/CXNamespace.swift": [1681726138, 468153152]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXShim/Sources/CXCompatible/Dispatch.swift": [1681726138, 468229568]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXShim/Sources/CXCompatible/Foundation.swift": [1681726138, 468291151]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXShim/Sources/CXCompatible/Polyfill/FlatMap.swift": [1681726138, 468397316]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXShim/Sources/CXCompatible/Polyfill/Optional.swift": [1681726138, 468462565]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXShim/Sources/CXCompatible/Polyfill/SwitchToLatest.swift": [1681726138, 468540273]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXShim/Sources/CXCompatible/Swift.swift": [1681726138, 468608730]

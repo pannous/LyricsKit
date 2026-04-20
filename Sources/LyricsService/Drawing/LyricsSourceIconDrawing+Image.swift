@@ -15,18 +15,20 @@ import CoreGraphics
 private extension LyricsProviders.Service {
     
     var drawingMethod: ((CGRect) -> Void)? {
-        switch self {
-        case .netease:
-            return LyricsSourceIconDrawing.drawNetEaseMusic
-        case .gecimi:
-            return LyricsSourceIconDrawing.drawGecimi
-        case .kugou:
-            return LyricsSourceIconDrawing.drawKugou
-        case .qq:
-            return LyricsSourceIconDrawing.drawQQMusic
-        default:
-            return nil
-        }
+        return nil // we need no image!
+//        switch self {
+//        case .netease:
+//            return LyricsSourceIconDrawing.drawNetEaseMusic
+//        case .gecimi:
+//                
+//            return LyricsSourceIconDrawing.drawGecimi
+//        case .kugou:
+//            return LyricsSourceIconDrawing.drawKugou
+//        case .qq:
+//            return LyricsSourceIconDrawing.drawQQMusic
+//        default:
+//            return nil
+//        }
     }
     
 }
@@ -40,30 +42,33 @@ import Cocoa
 extension LyricsSourceIconDrawing {
     
     public static let defaultSize = CGSize(width: 48, height: 48)
-    
+#if !targetEnvironment(macCatalyst)
     public static func icon(of service: LyricsProviders.Service, size: CGSize = defaultSize) -> NSImage {
+
         return NSImage(size: size, flipped: false) { (NSRect) -> Bool in
             service.drawingMethod?(CGRect(origin: .zero, size: size))
             return true
         }
     }
+    
+#endif
 }
     
 #elseif canImport(UIKit)
     
 import UIKit
-
-extension LyricsSourceIconDrawing {
-    
-    public static let defaultSize = CGSize(width: 48, height: 48)
-    
-    public static func icon(of service: LyricsProviders.Service, size: CGSize = defaultSize) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(size, false, 0)
-        service.drawingMethod?(CGRect(origin: .zero, size: size))
-        let image = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
-        UIGraphicsEndImageContext()
-        return image ?? UIImage()
-    }
-}
+//
+//extension LyricsSourceIconDrawing {
+//    
+//    public static let defaultSize = CGSize(width: 48, height: 48)
+//    
+//    public static func icon(of service: LyricsProviders.Service, size: CGSize = defaultSize) -> UIImage {
+//        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+//        service.drawingMethod?(CGRect(origin: .zero, size: size))
+//        let image = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
+//        UIGraphicsEndImageContext()
+//        return image ?? UIImage()
+//    }
+//}
 
 #endif

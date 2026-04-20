@@ -10,9 +10,10 @@
 #if canImport(CoreGraphics)
 
 #if canImport(Cocoa)
-    
-import Cocoa
+   
 
+import Cocoa
+#if !targetEnvironment(macCatalyst)
 typealias BezierPath = NSBezierPath
 typealias Color = NSColor
 
@@ -674,5 +675,5 @@ public class LyricsSourceIconDrawing {
     }
 
 }
-
+#endif
 #endif

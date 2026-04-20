@@ -36,17 +36,48 @@ extension LyricsProviders.LRCLib: _LyricsProvider {
     public static let service: LyricsProviders.Service? = .lrclib
 
     public func lyricsSearchPublisher(request: LyricsSearchRequest) -> AnyPublisher<LyricsToken, Never> {
-        var queryParams: [String: String] = [:]
+        // Build two search strategies:
+        //   1. structured (track_name + artist_name) — precise but fails when
+        //      LRCLib stores the artist under a romanised variant
+        //   2. generic q= keyword — broader, catches romanised names
+        // Build up to three search strategies (most → least specific):
+        //   1. structured: track_name + artist_name
+        //   2. q= with "title artist" combined
+        //   3. q= with title only (catches fully romanised artist names)
+        var searches: [[String: String]] = []
 
         switch request.searchTerm {
         case let .info(title, artist) where !artist.isEmpty:
-            queryParams["track_name"] = title
-            queryParams["artist_name"] = artist
+            searches.append(["track_name": title, "artist_name": artist])
+            searches.append(["q": "\(title) \(artist)"])
+            searches.append(["q": title])
         default:
-            queryParams["q"] = request.searchTerm.description
+            searches.append(["q": request.searchTerm.description])
         }
 
-        let queryString = queryParams.map { key, value in
+        return _lrclibSearchWithFallbacks(searches: searches, index: 0)
+    }
+
+    /// Tries each search strategy in order, returning the first non-empty result.
+    private func _lrclibSearchWithFallbacks(searches: [[String: String]], index: Int) -> AnyPublisher<LyricsToken, Never> {
+        guard index < searches.count else {
+            return Empty().eraseToAnyPublisher()
+        }
+        return _lrclibSearch(params: searches[index])
+            .collect()
+            .flatMap { results -> AnyPublisher<LyricsToken, Never> in
+                if !results.isEmpty {
+                    return Publishers.Sequence(sequence: results).eraseToAnyPublisher()
+                }
+                print("🔄 LRCLib: search \(index + 1)/\(searches.count) returned empty, trying next")
+                return self._lrclibSearchWithFallbacks(searches: searches, index: index + 1)
+            }
+            .eraseToAnyPublisher()
+    }
+
+    /// Low-level LRCLib search request for a single set of query parameters.
+    private func _lrclibSearch(params: [String: String]) -> AnyPublisher<LyricsToken, Never> {
+        let queryString = params.map { key, value in
             "\(key)=\(value.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? value)"
         }.joined(separator: "&")
 
