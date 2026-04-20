@@ -1,0 +1,4 @@
+module LyricsCore {
+    header "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsCore-Swift.h"
+    requires objc
+}

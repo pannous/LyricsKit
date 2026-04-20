@@ -1,0 +1,4 @@
+module CXExtensions {
+    header "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/CXExtensions.build/CXExtensions-Swift.h"
+    requires objc
+}

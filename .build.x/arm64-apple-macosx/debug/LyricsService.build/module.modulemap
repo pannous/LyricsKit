@@ -1,0 +1,4 @@
+module LyricsService {
+    header "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/LyricsService-Swift.h"
+    requires objc
+}

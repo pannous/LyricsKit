@@ -1,0 +1,233 @@
+{
+  "": {
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/master.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Drawing/LyricsSourceIconDrawing+Image.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Drawing/LyricsSourceIconDrawing+Image.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Drawing/LyricsSourceIconDrawing+Image.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Drawing/LyricsSourceIconDrawing+Image~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Drawing/LyricsSourceIconDrawing+Image.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Drawing/LyricsSourceIconDrawing.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Drawing/LyricsSourceIconDrawing.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Drawing/LyricsSourceIconDrawing.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Drawing/LyricsSourceIconDrawing~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Drawing/LyricsSourceIconDrawing.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/Gecimi/GecimiResponseCover.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Gecimi/GecimiResponseCover.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Gecimi/GecimiResponseCover.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Gecimi/GecimiResponseCover~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Gecimi/GecimiResponseCover.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/Gecimi/GecimiResponseSearchResult.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Gecimi/GecimiResponseSearchResult.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Gecimi/GecimiResponseSearchResult.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Gecimi/GecimiResponseSearchResult~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Gecimi/GecimiResponseSearchResult.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/Kugou/KugouResponseSearchResult.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Kugou/KugouResponseSearchResult.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Kugou/KugouResponseSearchResult.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Kugou/KugouResponseSearchResult~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Kugou/KugouResponseSearchResult.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/Kugou/KugouResponseSingleLyrics.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Kugou/KugouResponseSingleLyrics.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Kugou/KugouResponseSingleLyrics.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Kugou/KugouResponseSingleLyrics~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Kugou/KugouResponseSingleLyrics.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/KugouKrcHeaderFieldLanguage.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/KugouKrcHeaderFieldLanguage.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/KugouKrcHeaderFieldLanguage.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/KugouKrcHeaderFieldLanguage~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/KugouKrcHeaderFieldLanguage.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/NetEase/NetEaseResponseSearchResult.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/NetEase/NetEaseResponseSearchResult.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/NetEase/NetEaseResponseSearchResult.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/NetEase/NetEaseResponseSearchResult~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/NetEase/NetEaseResponseSearchResult.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/NetEase/NetEaseResponseSingleLyrics.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/NetEase/NetEaseResponseSingleLyrics.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/NetEase/NetEaseResponseSingleLyrics.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/NetEase/NetEaseResponseSingleLyrics~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/NetEase/NetEaseResponseSingleLyrics.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/QQ/QQResponseSearchResult.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/QQ/QQResponseSearchResult.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/QQ/QQResponseSearchResult.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/QQ/QQResponseSearchResult~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/QQ/QQResponseSearchResult.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/QQ/QQResponseSingleLyrics.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/QQ/QQResponseSingleLyrics.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/QQ/QQResponseSingleLyrics.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/QQ/QQResponseSingleLyrics~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/QQ/QQResponseSingleLyrics.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/ViewLyrics/ViewLyricsResponseSearchResult.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/ViewLyrics/ViewLyricsResponseSearchResult.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/ViewLyrics/ViewLyricsResponseSearchResult.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/ViewLyrics/ViewLyricsResponseSearchResult~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/ViewLyrics/ViewLyricsResponseSearchResult.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/JSONModel/Xiami/XiamiResponseSearchResult.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Xiami/XiamiResponseSearchResult.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Xiami/XiamiResponseSearchResult.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Xiami/XiamiResponseSearchResult~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/JSONModel/Xiami/XiamiResponseSearchResult.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Lyrics+Quality.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Lyrics+Quality.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Lyrics+Quality.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Lyrics+Quality~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Lyrics+Quality.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/LyricsSearchRequest.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/LyricsSearchRequest.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/LyricsSearchRequest.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/LyricsSearchRequest~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/LyricsSearchRequest.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Parser/KugouKrcDecrypter.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/KugouKrcDecrypter.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/KugouKrcDecrypter.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/KugouKrcDecrypter~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/KugouKrcDecrypter.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Parser/KugouKrcParser.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/KugouKrcParser.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/KugouKrcParser.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/KugouKrcParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/KugouKrcParser.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Parser/NetEaseKLyricParser.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/NetEaseKLyricParser.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/NetEaseKLyricParser.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/NetEaseKLyricParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/NetEaseKLyricParser.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Parser/TTPodXtrcParser.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/TTPodXtrcParser.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/TTPodXtrcParser.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/TTPodXtrcParser~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Parser/TTPodXtrcParser.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/Discontinued/Unsupported.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/Unsupported.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/Unsupported.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/Unsupported~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/Unsupported.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/Discontinued/ViewLyrics.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/ViewLyrics.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/ViewLyrics.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/ViewLyrics~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/ViewLyrics.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/Discontinued/Xiami.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/Xiami.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/Xiami.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/Xiami~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Discontinued/Xiami.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/Gecimi.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Gecimi.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Gecimi.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Gecimi~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Gecimi.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/Group.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Group.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Group.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Group~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Group.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/Kugou.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Kugou.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Kugou.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Kugou~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Kugou.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/LyricsProvider.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/LyricsProvider.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/LyricsProvider.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/LyricsProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/LyricsProvider.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/NetEase.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/NetEase.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/NetEase.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/NetEase~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/NetEase.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/QQMusic.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/QQMusic.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/QQMusic.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/QQMusic~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/QQMusic.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/Service.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Service.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Service.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Service~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Service.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Provider/Syair.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Syair.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Syair.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Syair~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Provider/Syair.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Utilities/Dictionary+HttpParameter.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Dictionary+HttpParameter.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Dictionary+HttpParameter.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Dictionary+HttpParameter~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Dictionary+HttpParameter.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Utilities/Global.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Global.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Global.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Global~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Global.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Utilities/Lyrics+Merge.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Lyrics+Merge.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Lyrics+Merge.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Lyrics+Merge~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/Lyrics+Merge.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Utilities/MD5.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/MD5.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/MD5.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/MD5~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/MD5.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Utilities/RegexPattern.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/RegexPattern.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/RegexPattern.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/RegexPattern~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/RegexPattern.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Utilities/String+XMLDecode.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/String+XMLDecode.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/String+XMLDecode.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/String+XMLDecode~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/String+XMLDecode.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/Utilities/_exported.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/_exported.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/_exported.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/_exported~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/Utilities/_exported.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsService/VendorIDTags.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/VendorIDTags.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/VendorIDTags.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/VendorIDTags~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsService.build/VendorIDTags.swiftdeps"
+  }
+}

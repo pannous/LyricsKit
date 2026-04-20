@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/master.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsCore/Lyrics+Furigana.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics+Furigana.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics+Furigana.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics+Furigana~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics+Furigana.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsCore/Lyrics.IDTag.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.IDTag.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.IDTag.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.IDTag~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.IDTag.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsCore/Lyrics.Metadata.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.Metadata.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.Metadata.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.Metadata~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.Metadata.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsCore/Lyrics.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/Lyrics.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsCore/LyricsLine.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsLine.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsLine.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsLine~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsLine.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsCore/LyricsLineAttachment.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsLineAttachment.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsLineAttachment.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsLineAttachment~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/LyricsLineAttachment.swiftdeps"
+  },
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/Sources/LyricsCore/RegexPattern.swift": {
+    "dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/RegexPattern.d",
+    "object": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/RegexPattern.swift.o",
+    "swiftmodule": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/RegexPattern~partial.swiftmodule",
+    "swift-dependencies": "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/LyricsCore.build/RegexPattern.swiftdeps"
+  }
+}

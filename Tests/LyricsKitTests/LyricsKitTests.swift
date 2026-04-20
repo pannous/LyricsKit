@@ -40,4 +40,46 @@ final class LyricsKitTests: XCTestCase {
         waitForExpectations(timeout: 10)
         cancelable.cancel()
     }
+
+    /// Verify LRCLib q= fallback finds songs stored under romanised artist names.
+    /// 天天年年 by 孙燕姿 is stored in LRCLib as "Stefanie Sun" / "Sun Yanzi".
+    func testLRCLibCJKFallback() {
+        let ex = expectation(description: "LRCLib CJK fallback finds 天天年年")
+        let provider = LyricsProviders.LRCLib()
+        let request = LyricsSearchRequest(
+            searchTerm: .info(title: "天天年年", artist: "孙燕姿"),
+            duration: 0
+        )
+        let cancellable = provider.lyricsPublisher(request: request).sink { lyrics in
+            // Verify lyrics contain the expected first line
+            let text = lyrics.description
+            XCTAssertTrue(
+                text.contains("墨色") || text.contains("天天年年"),
+                "Expected 天天年年 lyrics, got: \(text.prefix(200))"
+            )
+            ex.fulfill()
+        }
+        waitForExpectations(timeout: 15)
+        cancellable.cancel()
+    }
+
+    /// Verify NetEase returns correct lyrics for 天天年年 by 孙燕姿.
+    func testNetEaseTianTianNianNian() {
+        let ex = expectation(description: "NetEase finds 天天年年")
+        let provider = LyricsProviders.NetEase()
+        let request = LyricsSearchRequest(
+            searchTerm: .info(title: "天天年年", artist: "孙燕姿"),
+            duration: 0
+        )
+        let cancellable = provider.lyricsPublisher(request: request).sink { lyrics in
+            let text = lyrics.description
+            XCTAssertTrue(
+                text.contains("墨色") || text.contains("天天年年"),
+                "Expected 天天年年 lyrics, got: \(text.prefix(200))"
+            )
+            ex.fulfill()
+        }
+        waitForExpectations(timeout: 15)
+        cancellable.cancel()
+    }
 }

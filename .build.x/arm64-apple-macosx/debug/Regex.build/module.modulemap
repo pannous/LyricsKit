@@ -1,0 +1,4 @@
+module Regex {
+    header "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/arm64-apple-macosx/debug/Regex.build/Regex-Swift.h"
+    requires objc
+}

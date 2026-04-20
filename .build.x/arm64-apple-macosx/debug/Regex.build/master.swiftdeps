@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "1af71fac416a80c9970eca4d46f37e3bdc10f6b57c7f486a98069ac758abbb4f"
+build_start_time: [1681726139, 724401000]
+build_end_time: [1681726142, 523186000]
+inputs:
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/Regex/Sources/Regex/Capture.swift": [1681726138, 740617666]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/Regex/Sources/Regex/Match.swift": [1681726138, 740690332]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/Regex/Sources/Regex/Regex+Bridge.swift": [1681726138, 740832997]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/Regex/Sources/Regex/Regex.swift": [1681726138, 740907246]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/Regex/Sources/Regex/String+Replace.swift": [1681726138, 740980037]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/Regex/Sources/Regex/Utilities.swift": [1681726138, 741052453]

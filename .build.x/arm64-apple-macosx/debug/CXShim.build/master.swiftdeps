@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "3389c0548a7d03cea855074550be8ac1e16453f687a4ece3bc0909920c987a2f"
+build_start_time: [1681726142, 571628000]
+build_end_time: [1681726142, 768872000]
+inputs:
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXShim/Sources/CXShim/@_exported.swift": [1681726138, 468720729]

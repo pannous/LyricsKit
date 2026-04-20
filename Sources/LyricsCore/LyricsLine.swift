@@ -10,8 +10,7 @@
 import Foundation
 
 public struct LyricsLine : Identifiable {
-	public var id: String {return content+"\(position)"}
-	
+	public var id: String {return content+"\(position)" + (translation ?? "")}
     
     public var content: String
 	public var translation: String?
@@ -29,8 +28,9 @@ public struct LyricsLine : Identifiable {
         return String(format: "%02d:%06.3f", min, sec)
     }
     
-    public init(content: String, position: TimeInterval, attachments: Attachments = Attachments()) {
+    public init(content: String, position: TimeInterval, translation: String? = nil, attachments: Attachments = Attachments()) {
         self.content = content
+        self.translation = translation
         self.position = position
         self.attachments = attachments
     }

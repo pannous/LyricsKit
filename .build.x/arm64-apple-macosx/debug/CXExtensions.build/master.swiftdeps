@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "9ca61f80a6c4f081c63fc4915f6eb1ca0d8f9b67effa6a7b667900bbdb38f4be"
+build_start_time: [1681726233, 109108000]
+build_end_time: [1681726233, 476483000]
+inputs:
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXExtensions/Sources/CXExtensions/AnyScheduler.swift": [1681726138, 377519826]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXExtensions/Sources/CXExtensions/Blocking.swift": [1681726138, 377616533]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXExtensions/Sources/CXExtensions/DelayedAutoCancellable.swift": [1681726138, 377683324]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXExtensions/Sources/CXExtensions/IgnoreError.swift": [1681726138, 377758823]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXExtensions/Sources/CXExtensions/Invoke.swift": [1681726138, 377834614]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXExtensions/Sources/CXExtensions/SelfRetainedCancellable.swift": [1681726138, 377894405]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXExtensions/Sources/CXExtensions/Signal.swift": [1681726138, 377955362]
+  "/Users/me/dev/apps/Lyrics-Translator/LyricsKit/.build/checkouts/CXExtensions/Sources/CXExtensions/WeakAssign.swift": [1681726138, 378024153]
