@@ -6,3 +6,6 @@ Package.resolved
 DerivedData/
 *.o
 *.d
+
+# Unmodified, unused reference checkout; no active package dependency.
+/SwiftCF/
